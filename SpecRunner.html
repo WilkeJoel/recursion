@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Recursion">
+    <meta name="author" content="">
+    <title>Recursion</title>
+    
+  <link rel="stylesheet" href="lib/mocha/mocha.css">
+  <script src="lib/jquery.js"></script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/mocha/mocha.js"></script>
+  <script src="lib/chai/chai.js"></script>
+  <script src="lib/sinon/sinon.js"></script>
+  <script>
+    mocha.setup('bdd');
+    window.expect = chai.expect;
+    $(function() {
+      window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
+    });
+  </script>
+  <script src="src/getElementsByClassName.js"></script>
+  <script src="src/stringifyJSON-rev.js"></script>
+  <script src="spec/getElementsByClassNameSpec.js"></script>
+  <script src="spec/fixtures.js"></script>
+  <script src="spec/stringifyJSONSpec.js"></script>
+</head>
+<body>
+<div id="mocha"></div>
+</body>
+</html>
+
